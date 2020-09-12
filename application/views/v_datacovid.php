@@ -22,7 +22,7 @@
             </div>
         </div>
         <h4>Data Per Provinsi</h4>
-            <table class="table table-bordered">
+            <table id="prov" class="table table-striped table-bordered">
                 <thead class="thead-dark">
                     <tr>
                         <th>No</th>

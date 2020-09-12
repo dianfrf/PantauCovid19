@@ -6,8 +6,11 @@
         <title>Pantau Covid-19</title>
         <link rel="stylesheet" href="<?=base_url()?>Asset/css/bootstrap.min.css">
         <link rel="stylesheet" href="<?=base_url()?>Asset/style.css" type="text/css">
+        <link rel="stylesheet" href="<?=base_url()?>Asset/css/dataTables.bootstrap4.min.css">
         <script src="<?=base_url()?>Asset/js/jquery-3.2.1.min.js"></script>
         <script src="<?=base_url()?>Asset/js/bootstrap.min.js"></script>
+        <script src="<?=base_url()?>Asset/js/dataTables.bootstrap4.min.js"></script>
+        <script src="<?=base_url()?>Asset/js/jquery.dataTables.min.js"></script>
     </head>
     <body>
         <nav class="navbar navbar-expand-lg fixed-top">
@@ -42,5 +45,13 @@
         <div class="page-footer">
             <h6>Copyright &copy; 2020 <strong style="font-weight:bolder">Pantau Covid</strong>. All rights reserved.</h6>
         </div>
+        <script>
+            $(document).ready(function() {
+                $('#prov').DataTable();
+            } );
+            $(document).ready(function() {
+                $('#rumahsakit').DataTable();
+            } );
+        </script>
     </body>
 </html>
