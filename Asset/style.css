@@ -1,21 +1,70 @@
+.navbar {
+    background-color:white; 
+    border-bottom:1px solid rgb(202, 202, 202);
+}
+li a {
+    color:black !important;
+    font-size:18px;
+    margin-right:14px !important;
+}
+li a:hover, .active a {
+    color:rgb(182, 45, 45) !important;
+}
+.navbar-toggler:focus{
+    outline:none !important; 
+}
+.icon-bar{
+    width:35px;
+    height:3px; 
+    background-color:black; 
+    display:block; 
+    margin:6px 0px 6px 0px; 
+}
 .page-header h2{
-    text-align: center;
-    margin-top: 50px;
+    text-align:center;
+    margin-top:100px;
 }
 .card {
-    padding: 15px;
-    margin: 20px 0px 50px 0px;
-    border: none;
+    padding:15px;
+    margin:20px 0px 50px 0px;
+    border:none;
 }
 .card h3, .card h4 {
-    color: white;
+    color:white;
 }
 .kn {
-    background-color: rgb(73, 64, 206);
+    background-color:rgb(73, 64, 206);
 }
 .sm {
-    background-color: rgb(80, 218, 80);
+    background-color:rgb(80, 218, 80);
 }
 .mn {
-    background-color: rgb(192, 49, 49);
+    background-color:rgb(192, 49, 49);
+}
+.deteksi h4 {
+    text-align:center;
+    margin-top:50px;
+}
+label {
+    font-size:16px;
+    margin-right:10px;
+}
+.jumbotron {
+    background-color:white;
+}
+.tombol {
+    background-color:rgb(80, 218, 80);
+    border:none;
+    padding:10px;
+    width:100%;
+    color:white;
+}
+.page-footer{
+    width:100%; 
+    background-color:white; 
+}
+.page-footer h6 {
+    font-weight:lighter; 
+    text-align:center; 
+    line-height:2.8rem;
 }
