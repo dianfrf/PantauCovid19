@@ -72,14 +72,14 @@
         {
             if ($this->input->post('laporkan')) {
                 if ($this->M_pantaucovid->add_laporan() == TRUE) {
-                    $this->session->set_flashdata('pesan', '<div class="alert alert-success">Sukses menambah admin.</div>');
+                    $this->session->set_flashdata('pesan', '<div class="alert alert-success">Sukses melakukan laporan</div>');
                 }
                 else {
-                    $this->session->set_flashdata('pesan', '<div class="alert alert-danger">Gagal menambah admin.</div>');
+                    $this->session->set_flashdata('pesan', '<div class="alert alert-danger">Gagal melakukan laporan</div>');
                 }
             }
             else {
-                $this->session->set_flashdata('pesan', '<div class="alert alert-danger">Terjadi kesalahan pada jaringan.</div>');
+                $this->session->set_flashdata('pesan', '<div class="alert alert-danger">Terjadi kesalahan pada jaringan</div>');
             }
             redirect('laporsigap');
         }

@@ -3,6 +3,9 @@
         <h2>Lapor Sigap Covid-19</h2>
         <center><p>Laporkan diri Anda atau keluarga Anda apabila: 1. Mengalami gejala-gejala Covid-19, 2. Setelah melakukan deteksi dini menunjukkan gejala-gejala Covid-19.
             Isi form dibawah agar kami dapat membantu Anda </p></center>
+        <?php if ($this->session->flashdata('pesan') != null) { ?>
+			<?php echo $this->session->flashdata('pesan');?>
+		<?php } ?>
         <form action="<?=base_url('CovidController/lapor')?>" method="post">
             <div class="form-group">
                 <label>Nama Lengkap</label>
