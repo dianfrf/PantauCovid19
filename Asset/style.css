@@ -28,6 +28,7 @@ li a:hover, .active a {
     padding:15px;
     margin:20px 0px 50px 0px;
     border:none;
+    border-radius:0px;
 }
 .card h3, .card h4 {
     color:white;
@@ -58,6 +59,9 @@ label {
     padding:10px;
     width:100%;
     color:white;
+}
+.lapor form {
+    margin-top:50px;
 }
 .page-footer{
     width:100%; 

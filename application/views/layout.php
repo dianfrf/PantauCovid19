@@ -23,14 +23,14 @@
                         <li class="<?php echo $active == "Home" ? "nav-item active" : ""; ?>">
                             <a class="nav-link" href="<?=base_url('')?>">Beranda</a>
                         </li>
-                        <li class="<?php echo $active == "Deteksi" ? "nav-item active" : ""; ?>">
-                            <a class="nav-link" href="<?=base_url('CovidController/deteksidini')?>">Deteksi Dini Covid-19</a>
-                        </li>
                         <li class="<?php echo $active == "RS" ? "nav-item active" : ""; ?>">
-                            <a class="nav-link" href="<?=base_url('CovidController/rumahsakit')?>">Rumah Sakit Rujukan</a>
+                            <a class="nav-link" href="<?=base_url('rumahsakit')?>">Rumah Sakit Rujukan</a>
+                        </li>
+                        <li class="<?php echo $active == "Deteksi" ? "nav-item active" : ""; ?>">
+                            <a class="nav-link" href="<?=base_url('deteksidini')?>">Deteksi Dini Covid-19</a>
                         </li>
                         <li class="<?php echo $active == "Lapor" ? "nav-item active" : ""; ?>">
-                            <a class="nav-link" href="<?=base_url('CovidController/laporsigapt')?>">Lapor Sigap Covid-19</a>
+                            <a class="nav-link" href="<?=base_url('laporsigap')?>">Lapor Sigap Covid-19</a>
                         </li>
                     </ul>
                 </div>

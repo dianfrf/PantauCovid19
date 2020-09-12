@@ -11,7 +11,6 @@
         <?php if ($this->session->flashdata('pesan') != null) { ?>
 			<?php echo $this->session->flashdata('pesan');?>
 		<?php } ?>
-        <h2>Deteksi Dini Covid-19</h2>
         <form action="<?=base_url('CovidController/tesdeteksi')?>" method="post">
             <table class="table table-bordered">
                 <thead class="thead-dark">

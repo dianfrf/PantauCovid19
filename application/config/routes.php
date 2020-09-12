@@ -52,3 +52,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'CovidController';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+$route['rumahsakit'] = 'CovidController/rumahsakit';
+$route['deteksidini'] = 'CovidController/deteksidini';
+$route['laporsigap'] = 'CovidController/laporsigap';
