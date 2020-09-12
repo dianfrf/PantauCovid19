@@ -29,6 +29,9 @@
                         <li class="<?php echo $active == "RS" ? "nav-item active" : ""; ?>">
                             <a class="nav-link" href="<?=base_url('CovidController/rumahsakit')?>">Rumah Sakit Rujukan</a>
                         </li>
+                        <li class="<?php echo $active == "Lapor" ? "nav-item active" : ""; ?>">
+                            <a class="nav-link" href="<?=base_url('CovidController/laporsigapt')?>">Lapor Sigap Covid-19</a>
+                        </li>
                     </ul>
                 </div>
             </div>

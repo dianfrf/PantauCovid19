@@ -1,7 +1,7 @@
 <div class="page-header deteksi">
     <div class="container">
         <h2>Daftar Rumah Sakit Rujukan Covid-19 di Indonesia</h2>
-        <div class="table-responsive">
+        <div class="table-responsive" style="margin-top:20px">
             <table class="table table-bordered">
                 <thead class="thead-dark">
                     <tr>

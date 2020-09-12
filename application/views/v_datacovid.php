@@ -22,7 +22,6 @@
             </div>
         </div>
         <h4>Data Per Provinsi</h4>
-        <div class="table-responsive">
             <table class="table table-bordered">
                 <thead class="thead-dark">
                     <tr>
@@ -47,6 +46,5 @@
                 <?php } ?>
                 </tbody>
             </table>
-        </div>
     </div>
 </div>

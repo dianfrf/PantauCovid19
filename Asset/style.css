@@ -43,7 +43,7 @@ li a:hover, .active a {
 }
 .deteksi h4 {
     text-align:center;
-    margin-top:50px;
+    margin:50px 0px -20px 0px;
 }
 label {
     font-size:16px;
@@ -53,7 +53,7 @@ label {
     background-color:white;
 }
 .tombol {
-    background-color:rgb(80, 218, 80);
+    background-color:rgb(182, 45, 45);
     border:none;
     padding:10px;
     width:100%;
