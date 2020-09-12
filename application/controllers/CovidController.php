@@ -24,7 +24,14 @@
             $data['konten'] = "v_deteksidini";
             $data['active'] = "Deteksi";
             $this->load->view('layout', $data);
-            
+        }
+
+        public function rumahsakit()
+        {
+            $data['konten'] = "v_rumahsakit";
+            $data['active'] = "RS";
+            $data['datars'] = $this->getdataapi->getDataHospital();
+            $this->load->view('layout', $data);
         }
     
     }

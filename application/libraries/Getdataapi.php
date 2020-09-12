@@ -36,4 +36,14 @@
             curl_close($this->curl);
             return json_decode($this->data);
         }
+
+        public function getDataHospital()
+        {
+            $this->url = "https://dekontaminasi.com/api/id/covid19/hospitals";
+            $this->CurlGet();
+            $this->data = curl_exec($this->curl);
+            $httpcode = curl_getinfo($this->curl, CURLINFO_HTTP_CODE);
+            curl_close($this->curl);
+            return json_decode($this->data);
+        }
     }
