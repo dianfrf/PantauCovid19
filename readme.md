@@ -10,7 +10,7 @@ Cara menggunakan website:
 1. Clone repository
 2. Import database 'pantaucovid' ke MySQL. Ubah sesuai config database Anda di application/config/database.php
 3. Buka Command Prompt, lalu masuk ke folder. Setelah itu ketikkan php -S localhost:8001
-4. Buka browser dan kunjungi localhost::8001/SEMESTA_Dian,
+4. Buka browser dan kunjungi localhost::8001,
 5. Atau copy folder ke XAMPP/htdocs, buka browser dan kunjungi localhost/SEMESTA_Dian
 
 Referensi API yang digunakan:

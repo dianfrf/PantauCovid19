@@ -40,11 +40,9 @@
                 $jawaban6 = $this->input->post('jawaban6');
                 $jawaban7 = $this->input->post('jawaban7');
                 $jawaban8 = $this->input->post('jawaban8');
-                if (
-                    $this->indikasinonmediscovid($jawaban6, $jawaban7, $jawaban8) 
-                    || $this->indikasimediscovid($jawaban1, $jawaban2, $jawaban3, $jawaban4, $jawaban5)) 
-                {
-                redirect('laporsigap');
+                if ($this->indikasinonmediscovid($jawaban6, $jawaban7, $jawaban8) 
+                    || $this->indikasimediscovid($jawaban1, $jawaban2, $jawaban3, $jawaban4, $jawaban5)) {
+                    redirect('laporsigap');
                 } else {
                     $this->session->set_flashdata('pesan', '<div class="alert alert-success">Selamat Anda masih sehat. Tetap jaga kesehatan dengan makan teratur dan istirahat cukup.
                         Jaga jarak dengan sesama dan #TetapDirumahSaja</div>');
