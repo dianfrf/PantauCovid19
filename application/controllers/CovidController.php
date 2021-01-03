@@ -16,9 +16,14 @@
             $data['konten'] = "v_datacovid";
             $data['active'] = "Home";
             $data['datacovid'] = $this->getdataapi->getDataCovid();
-            $getdata = $this->getdataapi->getDataCovidProv();
-            $data['list'] = $getdata->list_data;
-            $this->load->view('layout.php', $data);       
+            if($data['datacovid'] == false){
+                $this->session->set_flashdata('pesan', '<div class="alert alert-danger">Terjadi kesalahan pada jaringan</div>');
+                redirect('deteksidini');
+            } else {
+                $getdata = $this->getdataapi->getDataCovidProv();
+                $data['list'] = $getdata->list_data;
+                $this->load->view('layout.php', $data);
+            }  
         }
 
         public function deteksidini()
@@ -73,7 +78,12 @@
             $data['konten'] = "v_rumahsakit";
             $data['active'] = "RS";
             $data['datars'] = $this->getdataapi->getDataHospital();
-            $this->load->view('layout', $data);
+            if($data['datars'] == false) {
+                $this->session->set_flashdata('pesan', '<div class="alert alert-danger">Terjadi kesalahan pada jaringan</div>');
+                redirect('deteksidini');
+            } else {
+                $this->load->view('layout', $data);
+            }
         }
 
         public function laporsigap()
