@@ -43,7 +43,7 @@
             $this->load->view($konten);
         ?>
         <div class="page-footer">
-            <h6>Copyright &copy; 2020 <strong style="font-weight:bolder">Pantau Covid</strong>. All rights reserved.</h6>
+            <h6>Copyright &copy; 2020 <strong style="font-weight:bolder">Dian F. Arif</strong>. All rights reserved.</h6>
         </div>
         <script>
             $(document).ready(function() {
